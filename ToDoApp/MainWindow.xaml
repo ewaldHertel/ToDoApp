@@ -1,0 +1,28 @@
+﻿<Window x:Class="Kalender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalender"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="555.6" Width="667">
+    <Grid>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="32" Margin="10,10,0,0" VerticalAlignment="Top" Width="639">
+            <MenuItem Header="Datei">
+                <MenuItem x:Name="miCalendar" Header="Kalender" HorizontalAlignment="Left" Width="145" Click="miCalendar_Click"/>
+                <MenuItem x:Name="miClose" Header="Beenden" HorizontalAlignment="Left" Width="142" Margin="0,0,-37,0" Click="miClose_Click"/>
+            </MenuItem>
+            <MenuItem Header="Einstellungen">
+                <MenuItem x:Name="miDbSettings" Header="Datenbank Einstellung" VerticalAlignment="Center" HorizontalAlignment="Left" BorderThickness="0" Click="miDbSettings_Click"/>
+            </MenuItem>
+        </Menu>
+        <ListView x:Name="liTermin" HorizontalAlignment="Left" Height="197" Margin="156,263,0,0" VerticalAlignment="Top" Width="469">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
